@@ -4,8 +4,13 @@ NS-3 (until 3.31) does not allow any nested-structure within the include files. 
 
 ```bash
 /doc
+  ns3-nested-structure.rst
 /examples
+  ns3-nested-structure-example.cc
+  wscript
 /helper
+  ns3-nested-structure-helper.cc
+  ns3-nested-structure-helper.h
 /model
   /include
     /another_subfolder
@@ -14,7 +19,10 @@ NS-3 (until 3.31) does not allow any nested-structure within the include files. 
       header2.h
     header1.h
   /src
-  main.cpp
+    main.cpp
+  ns3-nested-structure.cc
+  ns3-nested-structure.h
+wscript
 ```
 
 ## Current behaviour:
